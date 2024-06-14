@@ -1,0 +1,18 @@
+[
+    {
+        "id": 1,
+        "name": "Example App",
+        "version": "1.0.0",
+        "description": "This is an example app for demonstration purposes.",
+        "fileName": "example-app.zip",
+        "releaseDate": "2024-06-13"
+    },
+    {
+        "id": 2,
+        "name": "Another Tool",
+        "version": "2.0.0",
+        "description": "Another useful tool to help with your tasks.",
+        "fileName": "another-tool.zip",
+        "releaseDate": "2024-06-14"
+    }
+]

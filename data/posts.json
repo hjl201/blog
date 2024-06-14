@@ -1,0 +1,14 @@
+[
+    {
+        "id": 1,
+        "title": "Welcome to My Blog",
+        "content": "This is the first post on my personal blog. Stay tuned for more updates!",
+        "date": "2024-06-13"
+    },
+    {
+        "id": 2,
+        "title": "Another Day, Another Post",
+        "content": "Here’s another example post. I'll be sharing more about my interests and projects.",
+        "date": "2024-06-14"
+    }
+]

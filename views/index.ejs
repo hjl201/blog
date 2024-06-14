@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Blog</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <nav>
+        <a href="/">Home</a>
+        <a href="/software">Software</a>
+    </nav>
+    <h1>Welcome to My Personal Blog!</h1>
+    <ul>
+        <% posts.forEach(post => { %>
+            <li>
+                <h2><a href="/post/<%= post.id %>"><%= post.title %></a></h2>
+                <p><%= post.date %></p>
+                <p><%= post.content.substring(0, 100) %>...</p>
+            </li>
+        <% }) %>
+    </ul>
+</body>
+</html>

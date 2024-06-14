@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= software.name %> - My Personal Blog</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <h1><%= software.name %> (v<%= software.version %>)</h1>
+    <p><%= software.description %></p>
+    <p>Released on: <%= software.releaseDate %></p>
+    <p><a href="/software/<%= software.name %>/<%= software.fileName %>">Download</a></p>
+    <a href="/software">Back to Software List</a>
+</body>
+</html>

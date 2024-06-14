@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Software - My Personal Blog</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <nav>
+        <a href="/">Home</a>
+        <a href="/software">Software</a>
+        <a href="/admin">Admin</a> <!-- 仅供管理员访问 -->
+    </nav>
+    <h1>My Software</h1>
+    <ul>
+        <% softwareList.forEach(software => { %>
+            <li>
+                <h2><a href="/software/<%= software.id %>"><%= software.name %> (v<%= software.version %>)</a></h2>
+                <p><%= software.description %></p>
+                <p>Released on: <%= software.releaseDate %></p>
+            </li>
+        <% }) %>
+    </ul>
+    <a href="/">Back to Home</a>
+</body>
+</html>
